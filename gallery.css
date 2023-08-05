@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  :root {
+    --yellow: rgb(245, 209, 9);
+    /* --yellow:gold; */
+    --blue: rgb(6, 6, 73);
+    /* --blue: #080133; */
+    --radial: #f8f7f7;
+    /* --bgcolor: linear-gradient(to bottom, #fefccd, #ffffff 50%); */
+    --bgcolor: linear-gradient(to right, #fefccd, #ffffff 30%);
+  }
+  header {
+    height: 4.5rem;
+    width: 100%;
+    background: linear-gradient(to right, #fefccd, #ffffff 20%);
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 0.75rem;
+    align-items: center;
+  }
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.25rem;
+    color: var(--blue);
+    /* font-family: Arial, Helvetica, sans-serif; */
+  }
+  .navbar-logo span {
+    color: var(--yellow);
+  }
+  .navbar-data {
+    margin-top: 0.25rem;
+  }
+  .navbar-data a {
+    margin-left: 2.25rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--blue);
+  }
+  .navbar-data a:hover {
+    color: var(--yellow);
+  }
+  .container1{
+    width: 100%;
+    background: var(--bgcolor);
+
+  }
+  .container1 h2{
+     text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-top: 2rem;
+  }
+  .container1 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+
+  }
+  .gallery {
+    width: 100%;
+    /* background-color: var(--bgcolor); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+    object-fit: cover;
+  }
+  .imgcard {
+    height: 19rem;
+    width: 25rem;
+    border: none;
+    margin-top: 1.25rem;
+    transition: all 0.3s;
+  }
+  .imgcard:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.7);
+  }
+  .imgcard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+  .container1 h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-top: 4rem;
+
+  }
+  .container1 h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-top: 4rem;
+
+  }
+  .container2{
+    width: 100%;
+    background: var(--bgcolor);
+    padding: 2rem;
+  }
+  .container2 button{
+    height: 2.5rem;
+    width: 17rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--blue);
+    background:var(--yellow);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin-left: 40%;
+  }
+  .container2 button:hover{
+    color: #fff;
+    background-color: #000;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background: var(--blue);
+    flex-wrap: wrap;
+ 
+  }
+  footer .endbar span{
+    color: var(--yellow);
+  }
+  footer .endbar h1{
+    font-size: 1.25rem ;
+    color:white;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+  
+  }
+  footer .endbar p{
+    font-size: 1rem;
+    font-weight: 300;
+  
+    margin-top: 1.25rem;
+    color: slategray;
+    line-height: 1.5rem;
+  }
+  footer .endbar a{
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    line-height: 30px;
+  }
+  footer .endbar a:hover{
+    color: var(--yellow);
+  }
+  footer .endbar  .fas{
+    font-size: 1.25rem;
+  
+    padding: 0.6rem;
+    padding-left: 0;
+    color:white;
+  
+  }
+  footer .endbar .endbar-gmail .fas:hover{
+    color:rgb(209, 78, 78) ;
+  }
+  footer .endbar .endbar-phone .fas:hover{
+    color:rgb(27, 216, 27) ;
+  }
+  footer .endbar .endbar-location .fas:hover{
+    color: red;
+  
+  }
+  
+  
+  footer .endbar .fab{
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    margin-top: 0.8rem;
+    color: white;
+  }
+  footer .endbar .insta .fab:hover{
+    color: #e84393;
+  }
+  footer .endbar .twitter .fab:hover{
+    color:#0097e6 ;
+  }
+  footer .endbar .whatsapp .fab:hover{
+    color:rgb(27, 216, 27) ;
+  }
+  footer .endbar .facebook .fab:hover{
+    color:rgb(20, 20, 233) ;
+  }
+  
+  .times{
+    display: none;
+  }
+  
+  .timesnav{
+    display: none;
+  }
+
+  @media(max-width:430px){
+    body{
+      font-size: 10px;
+    }
+  
+    header {
+      height: 100%;
+      position: relative;
+  
+    }
+    
+    nav {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 0;
+      margin-left: 0;
+    }
+    .navbar-logo {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-top: 0.25rem;
+      color: var(--blue);
+      font-weight: 700;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      
+      
+    }
+  
+    .navbar-logo p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: var(--blue);
+      font-weight: 800;
+      }
+  
+    .navbar-logo span {
+      font-weight: 800;
+      
+    }
+    .navbar-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color:rgb(250, 247, 202) ;
+      height: 100vh;
+      width: 100%;
+      right: -100vw;
+      transition: all 1s ease;
+      z-index: 100;
+    }
+  
+  
+    .times{
+      display: block;
+      height: 30px;
+      width: 30px;
+      position:absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      transition:all 1s ease;
+    }
+  
+    .timesnav{
+      display: block;
+      position:absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 50px;
+      transition:all 1s ease;
+      z-index: 100;
+    }
+  
+    .navbar-data a {
+      margin-left: 0;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: var(--blue);
+      padding-top: 1rem;
+    }
+
+    .imgcard {
+      height: 19rem;
+      width: 20rem;
+      border: none;
+      margin-top: 1.25rem;
+      transition: all 0.3s;
+    }
+
+    .imgcard img {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+
+    .container2 button{
+      height: 2.5rem;
+      width: 12rem;
+      margin-left: 25%;
+    }
+    
+  
+  
+  
+    footer {
+      justify-content: flex-start;
+    }
+  
+    footer .endbar{
+      margin-top: 30px;
+    }
+  
+    footer .endbar a{
+      text-align: left;
+    }
+    
+  
+  }
+  
+  
